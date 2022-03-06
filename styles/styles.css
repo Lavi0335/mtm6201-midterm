@@ -86,6 +86,7 @@ p{
 a{
 	font-family: 'Montserrat', sans-serif;
 	color: var(--body-and-font);
+	text-decoration: none;
 }
 .menu a{
 	color: var(--light-font)
@@ -105,6 +106,9 @@ footer{
 	display: flex;
 	justify-content: space-around;
     background-color: #848fa5;
+}
+footer> div > p{
+	color: var(--body-and-font)
 }
 /* links in the footer test 1 */
 
