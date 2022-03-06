@@ -67,17 +67,20 @@ table {
 h1{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bold;
+	font-size: 1.8rem;
 	color: var(--main-accent)
 }
 h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	color:var(--secondary-titles-n-footer)
+	color:var(--secondary-titles-n-footer);
+	font-size: 1.5em;
 }
 h3{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	color: var(--secondary-titles-n-footer)
+	color: var(--secondary-titles-n-footer);
+	font-size: 1.2em;
 }
 p{
 	font-family: 'Josefin Sans', sans-serif;
@@ -89,7 +92,7 @@ a{
 	text-decoration: none;
 }
 .menu a{
-	color: var(--light-font)
+	color: var(--light-font);
 }
 
 /* Background colour section defaults */
