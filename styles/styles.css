@@ -47,9 +47,10 @@ table {
 	border-spacing: 0;
 }
 /*------------ CSS RESET -----------------*/
-p h2{
-    color:#ECFEE8;
-}
+
+/* ------------------------------------------------MAIN CODE START------------------------------------------- */
+
+/* Background colour section defaults */
 body{
     background-color: #2d2d2a; ;
 }
@@ -58,5 +59,30 @@ header{
    background-color:#DD1155; 
 }
 footer{
+	position:absolute;
+	width:100%;
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: flex-start;
     background-color: #848fa5;
 }
+/* links in the footer test 1 */
+
+/* div > a p{
+	display:flex;
+	flex-wrap: ;
+	justify-content: flex-start;
+} */
+.aligned{
+	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: start;
+}
+
+
+
+/* Text font default color */
+p h2{
+    color:#ECFEE8;
+}
+/* Links and default states */
