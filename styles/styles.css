@@ -50,7 +50,7 @@ table {
 
 /* ------------------------------------------------MAIN CODE START------------------------------------------- */
 
-/* Custom CSS code for pallets */
+/* -------------------------------------------------------Custom CSS code for pallets */
 :root{
 	--main-accent:#DD1155;
 	--secondary-titles-n-footer:#848fA5;
@@ -63,7 +63,7 @@ table {
 
 
 
-/* Font types and sizing */
+/*---------------------------------------------------------- Font types and sizing */
 h1{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bold;
@@ -90,6 +90,10 @@ a{
 	font-family: 'Montserrat', sans-serif;
 	color: var(--body-and-font);
 	text-decoration: none;
+}
+div > nav > .active{
+	color: var(--body-and-font);
+	font-weight: bold;
 }
 .menu a{
 	color: var(--light-font);
@@ -119,25 +123,35 @@ footer{
 	justify-content: space-around;
     background-color: #848fa5;
 }
-footer> div > p{
+footer > div > p{
 	color: var(--body-and-font)
 }
-/* links in the footer test 1 */
-
-/* div > a p{
-	display:flex;
-	flex-wrap: ;
-	justify-content: flex-start;
-} */
-.aligned{
-	display: flex;
-	justify-content: space-around;
-}
-
-
-
 /* Text font default color */
 p h2{
     color:#ECFEE8;
 }
-/* Links and default states */
+
+/* text over background image */
+
+#atop{
+	position: absolute;
+	top: 35%;
+	right: 10%;
+}
+/* containing inside the image */
+.container{
+	position: relative;
+}
+
+/* background image */
+.overlay{
+	
+}
+/* -------------------------------------------Desktop CSS */
+@media screen and (min-width: 720px){
+/* ----------------------------adjustments for footer--------------*/
+.aligned{
+	display: flex;
+	justify-content: start;
+ }
+}
