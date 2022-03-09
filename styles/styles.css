@@ -61,9 +61,6 @@ table {
 /* --------------------------Font sourcing----------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
-
 /*---------------------------------------------------------- Font types, sizing and color */
 h1{
 	font-family: 'Josefin Sans', sans-serif;
@@ -113,6 +110,17 @@ button{
 	border: none;
 	font-size: 1.2rem;
 	background: none;
+	border-radius: 10px;
+}
+/* search bar utility expand*/
+.util{
+	display: flex;
+	padding-bottom: .5;
+	
+}
+.util input{
+	flex-grow: 1;
+	border: none;
 }
 
 /* Background colour section defaults */
@@ -151,6 +159,12 @@ header > .aligned{
 .menu > a{
 	align-self: center;
 	padding: 1em;
+}
+
+/* background image */
+.container-order{
+	background-image: url(/images/cakes_landscape_320.jpg);
+	background-repeat: no-repeat;
 }
 /* -------------------------------------------Desktop CSS */
 @media screen and (min-width: 760px){
@@ -199,5 +213,9 @@ div > input{
 /* containing inside the image */
 .container{
 	position: relative;
+	/* max size */
+}
+.container-order{
+	background-image:url(/images/cakes_landscape_1920.jpg);
 }
 }
