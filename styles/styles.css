@@ -151,7 +151,7 @@ header > .aligned{
 
 
 /* -------------------------------------------Desktop CSS */
-@media screen and (min-width: 720px){
+@media screen and (min-width: 760px){
 /* ----------------------------adjustments for footer--------------*/
 .aligned > .menu{
 	display: flex;
