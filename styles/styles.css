@@ -58,8 +58,9 @@ table {
 	--light-font: #ECFEE8;
 }
 
-
-
+/* --------------------------Font sourcing----------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 
@@ -92,7 +93,7 @@ a{
 	text-decoration: none;
 }
 div > nav > .active{
-	color: var(--body-and-font);
+	background-color: var(--body-and-font);
 	font-weight: bold;
 }
 .menu a{
@@ -130,7 +131,53 @@ footer > div > p{
 p h2{
     color:#ECFEE8;
 }
+/* Getting the menus to display in column format*/
+header > .aligned{
+	display: flex;
+	flex-direction: column;
+}
+.aligned > nav{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.menu > a{
+	align-self: center;
+	padding: 1em;
+}
 
+
+
+
+
+/* -------------------------------------------Desktop CSS */
+@media screen and (min-width: 720px){
+/* ----------------------------adjustments for footer--------------*/
+.aligned > .menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.aligned{
+	display: flex;
+	justify-content: space-around;
+ }
+.aligned > div{
+	 display: flex;
+ }
+ .menu > a{
+	 color: var(--light-font);
+	 transition: color .1s
+ }
+
+ .menu > a:hover{
+	 color: var(--body-and-font);
+	 ;
+ }
+ div > nav > .active{
+/* color: var(--body-and-font); */
+	font-weight: bold;
+}
 /* text over background image */
 
 #atop{
@@ -142,16 +189,4 @@ p h2{
 .container{
 	position: relative;
 }
-
-/* background image */
-.overlay{
-	
-}
-/* -------------------------------------------Desktop CSS */
-@media screen and (min-width: 720px){
-/* ----------------------------adjustments for footer--------------*/
-.aligned{
-	display: flex;
-	justify-content: start;
- }
 }
