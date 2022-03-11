@@ -159,13 +159,25 @@ header > .aligned{
 .menu > a{
 	align-self: center;
 	padding: 1em;
+	width: calc(100% - 2em);
+	text-align: center;
 }
+/* -----------------------------------------------------------Homepage specifics--------------------------*/
 
 /* background image */
 .container-order{
-	background-image: url(/images/cakes_landscape_320.jpg);
+	background-image: url(../images/cakes_landscape_320.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
 }
+
+/* ----------------------------------------------------------About page-------------------------------------- */
+.about > div > img{
+	max-width: 760px;
+}
+
+
 /* -------------------------------------------Desktop CSS */
 @media screen and (min-width: 760px){
 /* ---------------------------------------tweaks to header and nav */
@@ -190,14 +202,16 @@ div > input{
 .aligned > div{
 	 display: flex;
  }
- .menu > a{
+ .menu a{
 	 color: var(--light-font);
-	 transition: color .1s
+	 transition: color .1s;
+	 width: auto;
  }
 
- .menu > a:hover{
-	 color: var(--body-and-font);
-	 ;
+ .menu a:hover{
+	 color: var(--light-font)!important;
+	 background-color: var(--body-and-font);
+	
  }
  div > nav > .active{
 /* color: var(--body-and-font); */
@@ -216,6 +230,10 @@ div > input{
 	/* max size */
 }
 .container-order{
-	background-image:url(/images/cakes_landscape_1920.jpg);
+	background-image:url(../images/cakes_landscape_1920.jpg);
 }
+
+
+
+
 }
