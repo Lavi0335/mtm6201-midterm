@@ -169,7 +169,7 @@ header > .aligned{
 	background-image: url(../images/cakes_landscape_320.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 400px;
+	min-height: 500px;
 }
 
 /* ----------------------------------------------------------About page-------------------------------------- */
@@ -180,6 +180,10 @@ header > .aligned{
 
 /* -------------------------------------------Desktop CSS */
 @media screen and (min-width: 760px){
+	/* Body content area--------------------- */
+	body{
+		max-width: 1200px;
+	}
 /* ---------------------------------------tweaks to header and nav */
 .aligned > .menu{
 	display: flex;
@@ -198,10 +202,12 @@ div > input{
 .aligned{
 	display: flex;
 	justify-content: space-between;
+	max-width: 1200px;
  }
 .aligned > div{
 	 display: flex;
  }
+ /* -------------------------------------header tweaks-------------- */
  .menu a{
 	 color: var(--light-font);
 	 transition: color .1s;
@@ -217,6 +223,11 @@ div > input{
 /* color: var(--body-and-font); */
 	font-weight: bold;
 }
+/* ------------------------search bar size refinement--- */
+.util input{
+	height: 20px;
+	align-self: center;
+}
 /* text over background image */
 
 #atop{
@@ -231,6 +242,8 @@ div > input{
 }
 .container-order{
 	background-image:url(../images/cakes_landscape_1920.jpg);
+	max-width: 1200px;
+	align-self: center;
 }
 
 
