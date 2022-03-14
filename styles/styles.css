@@ -182,7 +182,7 @@ header > .aligned{
 @media screen and (min-width: 760px){
 	/* Body content area--------------------- */
 	body{
-		max-width: 1200px;
+	  max-width: 1920px;
 	}
 /* ---------------------------------------tweaks to header and nav */
 .aligned > .menu{
@@ -202,7 +202,7 @@ div > input{
 .aligned{
 	display: flex;
 	justify-content: space-between;
-	max-width: 1200px;
+	max-width: 1920px;
  }
 .aligned > div{
 	 display: flex;
@@ -242,7 +242,8 @@ div > input{
 }
 .container-order{
 	background-image:url(../images/cakes_landscape_1920.jpg);
-	max-width: 1200px;
+	max-width: 1920px;
+	min-height: 650px;
 	align-self: center;
 }
 
