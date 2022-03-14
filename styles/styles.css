@@ -178,11 +178,12 @@ header > .aligned{
 }
 
 
-/* -------------------------------------------Desktop CSS */
+/* --------------------------------------------------------------------------------------------------------------------Desktop CSS */
 @media screen and (min-width: 760px){
 	/* Body content area--------------------- */
 	body{
 	  max-width: 1920px;
+	  margin: 0 auto;
 	}
 /* ---------------------------------------tweaks to header and nav */
 .aligned > .menu{
@@ -199,13 +200,19 @@ div > input{
 	color: var(--light-font);
 }
 /* ----------------------------adjustments for footer--------------*/
+footer {
+	padding: 10px;
+}
 .aligned{
 	display: flex;
 	justify-content: space-between;
-	max-width: 1920px;
+	max-width: 1920px;	
  }
-.aligned > div{
-	 display: flex;
+ .aligned p{
+	 align-self: center;
+ }
+ .aligned  a{
+	 align-self:center;
  }
  /* -------------------------------------header tweaks-------------- */
  .menu a{
@@ -246,7 +253,9 @@ div > input{
 	min-height: 650px;
 	align-self: center;
 }
-
+.sized{
+	max-width: 420px;
+}
 
 
 
