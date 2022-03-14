@@ -50,6 +50,11 @@ table {
 
 /* ------------------------------------------------MAIN CODE START------------------------------------------- */
 
+/* html preset ---------------------------------------------------------------------------------- */
+html{
+	box-sizing: border-box;
+}
+
 /* -------------------------------------------------------Custom CSS code for pallets */
 :root{
 	--main-accent:#DD1155;
@@ -132,7 +137,6 @@ header{
    background-color: var(--main-accent); 
 }
 footer{
-	position:absolute;
 	width:100%;
 	/* display: flex; */
 	justify-content: space-around;
@@ -162,6 +166,8 @@ header > .aligned{
 	width: calc(100% - 2em);
 	text-align: center;
 }
+/* spacing for inside content */
+
 /* -----------------------------------------------------------Homepage specifics--------------------------*/
 
 /* background image */
@@ -171,6 +177,13 @@ header > .aligned{
 	background-size: cover;
 	min-height: 500px;
 }
+
+/* cake image */
+.sized{
+	max-width: 760px;
+	width: 100%;
+}
+
 
 /* ----------------------------------------------------------About page-------------------------------------- */
 .about > div > img{
@@ -202,6 +215,8 @@ div > input{
 /* ----------------------------adjustments for footer--------------*/
 footer {
 	padding: 10px;
+	max-width: 1920px;
+	box-sizing: border-box;
 }
 .aligned{
 	display: flex;
