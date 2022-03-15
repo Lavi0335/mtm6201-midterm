@@ -74,7 +74,8 @@ h1{
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: bold;
 	font-size: 1.8rem;
-	color: var(--main-accent)
+	color: var(--main-accent);
+	padding-bottom: var(--pad-content);
 }
 h2{
 	font-family: 'Montserrat', sans-serif;
@@ -90,7 +91,7 @@ h3{
 }
 p{
 	font-family: 'Josefin Sans', sans-serif;
-	color:var(--light-font)
+	color:var(--light-font);
 }
 a{
 	font-family: 'Montserrat', sans-serif;
@@ -191,11 +192,21 @@ header > .aligned{
 .content{
 	padding: var(--pad-mobile);
 }
+/* spacing after text adn titles */
+article p{
+	padding-bottom: var(--pad-content);
+}
+h2{
+	padding-bottom: var(--pad-content);
+}
+label{
+	padding-bottom: var(--pad-content);
+}
 /* -----------------------------------------------------------Homepage specifics--------------------------*/
 
 /* background image */
 .container-order{
-	background-image: url(../images/cakes_landscape_320.jpg);
+	background-image: url(../images/cakes_landscape_640.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
@@ -229,7 +240,7 @@ textarea{
 	height: 200px;
 }
 /* --------------------------------------------------------------------------------------------------------------------Desktop CSS */
-@media screen and (min-width: 760px){
+@media screen and (min-width: 780px){
 	/* Body content area--------------------- */
 	body{
 	  max-width: 1920px;
@@ -288,12 +299,19 @@ footer {
  div > nav > .active{
 /* color: var(--body-and-font); */
 	font-weight: bold;
+	border-radius: var(--pad-desktop);
+
 }
 /* ------------------------search bar size refinement--- */
 .util input{
 	height: 20px;
 	align-self: center;
 }
+/* containing inside the image */
+.container{
+	position: relative;
+}
+/* ---------------------------------------------Homepage specifics */
 /* text over background image */
 
 #atop{
@@ -301,11 +319,9 @@ footer {
 	top: 35%;
 	right: 10%;
 }
-/* containing inside the image */
-.container{
-	position: relative;
-	/* max size */
-}
+
+
+/* image details ---------------------- homepage */
 .container-order{
 	background-image:url(../images/cakes_landscape_1920.jpg);
 	max-width: 1920px;
