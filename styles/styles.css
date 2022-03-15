@@ -224,10 +224,16 @@ label{
 #atop{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
+	background-color:#2d2d2a6d;
+	padding: 10px;
 }
 #atop > button{
-	align-self: stretch;
+	position: absolute;
+	width: 99%;
+	top: 65%;
+	margin: 0 auto;
+	
 }
 /* cake image */
 .sized{
@@ -284,6 +290,9 @@ div > input{
 	border: none;
 	color: var(--light-font);
 }
+#atop {
+	background-color: rgba(255, 255, 255, 0);
+}
 /* ----------------------------adjustments for footer--------------*/
 footer {
 	padding: 10px;
@@ -339,8 +348,10 @@ footer {
 	top: 35%;
 	right: 10%;
 }
-
-
+#atop > button{
+ position: relative;
+ margin-top: var(--pad-content);
+}
 /* image details ---------------------- homepage */
 .container-order{
 	background-image:url(../images/cakes_landscape_1920.jpg);
