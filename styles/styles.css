@@ -119,7 +119,7 @@ button{
 	border: none;
 	font-size: 1.2rem;
 	background: none;
-	border-radius: 10px;
+	border-radius: var(--pad-desktop);
 }
 /* ----search bar utility expand*/
 .util{
@@ -201,6 +201,11 @@ h2{
 }
 label{
 	padding-bottom: var(--pad-content);
+}
+/* Hover state animation */
+.menu a:hover{
+	color: var(--light-font)!important;
+	background-color: var(--body-and-font);
 }
 /* -----------------------------------------------------------Homepage specifics--------------------------*/
 
