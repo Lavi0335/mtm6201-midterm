@@ -61,6 +61,9 @@ html{
 	--secondary-titles-n-footer:#848fA5;
 	--body-and-font: #2d2d2a;
 	--light-font: #ECFEE8;
+	--pad-mobile: 20px;
+	--pad-desktop: 40px;
+	--pad-content: 10px;
 }
 
 /* --------------------------Font sourcing----------------------------------------- */
@@ -117,7 +120,7 @@ button{
 	background: none;
 	border-radius: 10px;
 }
-/* search bar utility expand*/
+/* ----search bar utility expand*/
 .util{
 	display: flex;
 	padding-bottom: .5;
@@ -127,8 +130,13 @@ button{
 	flex-grow: 1;
 	border: none;
 }
-
-/* Background colour section defaults */
+label{
+	color: var(--secondary-titles-n-footer);
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	margin-top: 20px;
+}
+/*-------- Background colour section defaults */
 body{
     background-color: #2d2d2a;
 }
@@ -136,15 +144,28 @@ body{
 header{
    background-color: var(--main-accent); 
 }
+/* ------------------------------ footer specifics */
 footer{
 	width:100%;
 	/* display: flex; */
 	justify-content: space-around;
     background-color: #848fa5;
 }
-footer > div > p{
-	color: var(--body-and-font)
+footer > div > p , nav{
+	color: var(--body-and-font);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
 }
+footer p{
+	padding: 10px;
+}
+footer a{
+	padding: 10px;
+}
+
+
 /* Text font default color */
 p h2{
     color:#ECFEE8;
@@ -167,7 +188,9 @@ header > .aligned{
 	text-align: center;
 }
 /* spacing for inside content */
-
+.content{
+	padding: var(--pad-mobile);
+}
 /* -----------------------------------------------------------Homepage specifics--------------------------*/
 
 /* background image */
@@ -190,7 +213,21 @@ header > .aligned{
 	max-width: 760px;
 }
 
+/* --------------------------------------------------------------Contact Page---------------------------------------- */
+/* form organization */
+div > form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 20px;
+}
+form div{
+	align-content: flex-start;
+}
 
+textarea{
+	height: 200px;
+}
 /* --------------------------------------------------------------------------------------------------------------------Desktop CSS */
 @media screen and (min-width: 760px){
 	/* Body content area--------------------- */
@@ -198,6 +235,10 @@ header > .aligned{
 	  max-width: 1920px;
 	  margin: 0 auto;
 	}
+/* -----content padding alignment */
+.content{
+	padding: 20px 40px;
+}
 /* ---------------------------------------tweaks to header and nav */
 .aligned > .menu{
 	display: flex;
@@ -228,6 +269,9 @@ footer {
  }
  .aligned  a{
 	 align-self:center;
+ }
+ footer > div > p , nav{
+	 justify-content: flex-start;
  }
  /* -------------------------------------header tweaks-------------- */
  .menu a{
