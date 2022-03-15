@@ -33,7 +33,15 @@
     <article class="about">
         <div>
             <!-- make the images in photoshop at different, with the specific width and height, the use picture and scr tag *review assignment*-->
-            <picture src="images/cake_pops.jpg" alt="close up of cakepops" width="100%">
+            <picture> 
+                <img class="header2" 
+                src="images/cake_pops.jpg" 
+                srcset="images/cake_pops_480.jpg 420w,
+                images/cake_pops_720.jpg 720w"
+                sizes="(max-width: 420px) 420px,
+               (max-width: 720px) 720px"
+                alt="close up of cakepops">
+            </picture>
         </div>
        <!-- top image *add media quierys*-->
       <div>
