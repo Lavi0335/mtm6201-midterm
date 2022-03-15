@@ -240,7 +240,10 @@ label{
 .about > div > img{
 	max-width: 760px;
 }
-
+/* cake pop image */
+.header2{
+	width:100%;
+}
 /* --------------------------------------------------------------Contact Page---------------------------------------- */
 /* form organization */
 div > form {
