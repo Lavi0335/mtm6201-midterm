@@ -376,6 +376,11 @@ footer {
 .small_i{
 	max-width: 420px;
 }
+.items{
+	display: grid;
+	grid-template-columns: 2.2fr 1.2fr;
+}
+/* Contact page image alignment */
 
 
 
