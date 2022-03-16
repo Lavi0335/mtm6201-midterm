@@ -355,6 +355,11 @@ footer {
  position: relative;
  margin-top: var(--pad-content);
 }
+/* grid for image ------------------ */
+.items{
+	display: grid;
+	
+}
 /* image details ---------------------- homepage */
 .container-order{
 	background-image:url(../images/cakes_landscape_1920.jpg);
