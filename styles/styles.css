@@ -75,7 +75,7 @@ h1{
 	font-weight: bold;
 	font-size: 1.8rem;
 	color: var(--main-accent);
-	padding-bottom: var(--pad-content);
+	padding-bottom: var(--pad-mobile);
 }
 h2{
 	font-family: 'Montserrat', sans-serif;
@@ -356,10 +356,11 @@ footer {
  margin-top: var(--pad-content);
 }
 /* grid for image ------------------ */
-.items{
+.content > .items{
 	display: grid;
-	
+	grid-template-columns: 2.2fr 1.2fr;
 }
+
 /* image details ---------------------- homepage */
 .container-order{
 	background-image:url(../images/cakes_landscape_1920.jpg);
@@ -369,6 +370,7 @@ footer {
 }
 .sized{
 	max-width: 420px;
+	padding-left: var(--pad-content);
 }
 /* About me page image alignment */
 .small_i{
