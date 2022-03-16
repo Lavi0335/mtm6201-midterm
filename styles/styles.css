@@ -250,6 +250,9 @@ label{
 .header2{
 	width:100%;
 }
+.small_i{
+	width: 100%;;
+}
 /* --------------------------------------------------------------Contact Page---------------------------------------- */
 /* form organization */
 div > form {
@@ -360,6 +363,10 @@ footer {
 	align-self: center;
 }
 .sized{
+	max-width: 420px;
+}
+/* About me page image alignment */
+.small_i{
 	max-width: 420px;
 }
 
