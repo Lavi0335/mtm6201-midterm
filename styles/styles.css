@@ -129,7 +129,7 @@ button:active{
 }
 i{
 	color: var(--light-font);
-	padding-right: var(--pad-mobile);
+	padding: var(--pad-content);
 }
 /* ----search bar utility expand*/
 .util{
@@ -409,19 +409,25 @@ footer {
 	max-width: 400px;
 }
 .small_i{
-	max-width: 350px;
+	width: 450px;
 }
 .items{
-	display: grid;
-	grid-template-columns: 2.2fr 1.2fr;
+	display: flex;
+	flex-direction: row-reverse;
 }
 .reverse{
-	display: grid;
-grid-template-columns: 1fr 2fr;
+	display: flex;
+	flex-direction: row-reverse;
 }
  .ordered{
-	order: 2;
-	padding-left: var(--pad-mobile);
+	order: 1;
+}
+.items > div{
+	padding-left: var(--pad-content);
+	padding-right: var(--pad-content);
+}
+.reverse div{
+	padding-right: var(--pad-content);
 }
 /* --------------------------------------Contact page */
 /* Contact page image alignment */
