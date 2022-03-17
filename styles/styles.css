@@ -396,8 +396,11 @@ footer {
 	padding-left: var(--pad-content);
 }
 /* About me page image alignment */
+.about div > img{
+	max-width: 400px;
+}
 .small_i{
-	max-width: 420px;
+	max-width: 350px;
 }
 .items{
 	display: grid;
