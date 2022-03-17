@@ -427,20 +427,21 @@ grid-template-columns: 1fr 2fr;
 /* Contact page image alignment */
 .item{
 	display: grid;
-	grid-template-columns: 1fr .5fr;
-	/* grid-template-rows: 1fr 1fr; */
-	grid-template-areas: "1 2"
-			             "1 2"
-						 "1 3";
+	grid-template-areas: "1 2 2"
+			             "1 2 2"
+						 "1 3 3"
+						 "1 4 4";
 }
 .first{
-	grid-area: 1 2;
+	grid-area: 1 ;
 }
 .second{
-	grid-area: 4;
-}
-.third{
 	grid-area: 3;
 }
-
+.third{
+	grid-area: 2;
+}
+.fourth{
+	grid-area: 4;
+}
 }
