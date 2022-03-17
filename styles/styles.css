@@ -113,6 +113,7 @@ div > nav > .active{
 	font-size: 1.8em;
 	border: none;
 	padding: 10px;
+	
 }
 button{
 	color:var(--light-font);
@@ -120,6 +121,11 @@ button{
 	font-size: 1.2rem;
 	background: none;
 	border-radius: var(--pad-desktop);
+	box-shadow: 0 9px var(--body-and-font)
+}
+button:active{
+	box-shadow: 0 5px var(--light-font);
+	transform: translateY(5px);
 }
 i{
 	color: var(--light-font);
@@ -170,7 +176,6 @@ footer a{
 	padding: 10px;
 }
 
-
 /* Text font default color */
 p h2{
     color:#ECFEE8;
@@ -192,11 +197,18 @@ header > .aligned{
 	width: calc(100% - 2em);
 	text-align: center;
 }
+/* nav button css tweaks */
+.shopping{
+	box-shadow: 0 0 0;
+}
+.shopping:active{
+	box-shadow: none;
+}
 /* spacing for inside content */
 .content{
 	padding: var(--pad-mobile);
 }
-/* spacing after text adn titles */
+/* spacing after text and titles */
 article p{
 	padding-bottom: var(--pad-content);
 }
@@ -336,6 +348,7 @@ footer {
  .menu a:hover{
 	 color: var(--light-font)!important;
 	 background-color: var(--body-and-font);
+	 border-radius: var(--pad-desktop);
 	
  }
  div > nav > .active{
