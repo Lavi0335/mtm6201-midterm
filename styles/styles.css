@@ -57,7 +57,7 @@ html{
 
 /* -------------------------------------------------------Custom CSS code for pallets */
 :root{
-	--main-accent:#DD1155;
+	--main-accent:#dd1155;
 	--secondary-titles-n-footer:#848fA5;
 	--body-and-font: #2d2d2a;
 	--light-font: #ECFEE8;
@@ -120,6 +120,10 @@ button{
 	font-size: 1.2rem;
 	background: none;
 	border-radius: var(--pad-desktop);
+}
+i{
+	color: var(--light-font);
+	padding-right: var(--pad-mobile);
 }
 /* ----search bar utility expand*/
 .util{
@@ -236,7 +240,7 @@ picture > img{
 #atop > button{
 	position: absolute;
 	width: 99%;
-	top: 50%;
+	top: 60%;
 	margin: 0 auto;
 	
 }
@@ -273,6 +277,10 @@ form div{
 textarea{
 	height: 200px;
 }
+.second > .button{
+	width: 100%;
+}
+	
 /* --------------------------------------------------------------------------------------------------------------------Desktop CSS */
 @media screen and (min-width: 780px){
 	/* Body content area--------------------- */
@@ -311,12 +319,10 @@ footer {
 	justify-content: space-between;
 	max-width: 1920px;	
  }
- .aligned p{
+ .aligned p, a, span{
 	 align-self: center;
  }
- .aligned  a{
-	 align-self:center;
- }
+
  footer > div > p , nav{
 	 justify-content: flex-start;
  }
@@ -373,7 +379,7 @@ footer {
 	align-self: center;
 }
 .sized{
-	max-width: 420px;
+	max-width: 300px;
 	padding-left: var(--pad-content);
 }
 /* About me page image alignment */
