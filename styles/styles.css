@@ -218,6 +218,7 @@ header > .aligned{
 /* spacing after text and titles */
 article p{
 	padding-bottom: var(--pad-content);
+	padding-top: var(--pad-content);
 }
 h2{
 	padding-bottom: var(--pad-content);
@@ -281,6 +282,12 @@ picture > img{
 .small_i{
 	width: 100%;;
 }
+.style{
+	background-color: var(--light-font);
+	width: 100%;
+	padding: 2px;
+	margin: 5px;
+}
 /* --------------------------------------------------------------Contact Page---------------------------------------- */
 /* form organization */
 div > form {
@@ -298,7 +305,9 @@ textarea{
 }
 .second > .button{
 	width: 100%;
+	margin-bottom: var(--pad-mobile);
 }
+
 	
 /* --------------------------------------------------------------------------------------------------------------------Desktop CSS */
 @media screen and (min-width: 780px){
@@ -436,20 +445,29 @@ footer {
 .item{
 	display: grid;
 	gap: var(--pad-mobile);
+	grid-template-rows: 1fr .5fr .5fr;
 	grid-template-areas: 'fi info'
 						 'fi social'
 						 'fi btn'
 }
 .first{
 	grid-area: fi;
+	margin-bottom: var(--pad-content);
+	align-self: stretch;
 }
 .second{
+	display: flex;
+	align-items:flex-end;
 	grid-area: btn;
 }
 .third{
+	padding-top: 20px;
 	grid-area: info;
 }
 .fourth{
 	grid-area: social;
+}
+.notop{
+	margin-top: 0;
 }
 }
