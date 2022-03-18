@@ -257,6 +257,7 @@ picture > img{
 	background-color:#2d2d2a6d;
 	padding: 10px;
 }
+/* I've repositione this button at least 40 times and it keeps changing from browser. It should work unless it decides otherwise, I tried really hard Travis, I swear ~(>_<。)＼*/
 #atop > button{
 	position: absolute;
 	width: 99%;
