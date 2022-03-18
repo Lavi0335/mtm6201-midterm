@@ -260,7 +260,7 @@ picture > img{
 #atop > button{
 	position: absolute;
 	width: 99%;
-	top: 60%;
+	top: 62%;
 	margin: 0 auto;
 	
 }
@@ -269,7 +269,6 @@ picture > img{
 	max-width: 760px;
 	width: 100%;
 }
-
 
 /* ----------------------------------------------------------About page-------------------------------------- */
 .about > div > img{
