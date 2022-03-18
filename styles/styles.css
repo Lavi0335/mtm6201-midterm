@@ -130,6 +130,7 @@ button:active{
 i{
 	color: var(--light-font);
 	padding: var(--pad-content);
+	font-size: 1.3em;
 }
 /* ----search bar utility expand*/
 .util{
