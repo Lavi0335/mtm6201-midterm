@@ -67,8 +67,7 @@ html{
 }
 
 /* --------------------------Font sourcing----------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Oxygen&display=swap');
 /*---------------------------------------------------------- Font types, sizing and color */
 h1{
 	font-family: 'Josefin Sans', sans-serif;
@@ -90,7 +89,7 @@ h3{
 	font-size: 1.2em;
 }
 p{
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Oxygen', sans-serif;
 	color:var(--light-font);
 }
 a{
@@ -416,7 +415,8 @@ footer {
 	max-width: 300px;
 	padding-left: var(--pad-content);
 }
-/* About me page image alignment */
+/* About us page------------------------- */
+/* About us page image alignment */
 .about div > img{
 	max-width: 400px;
 }
@@ -440,6 +440,14 @@ footer {
 }
 .reverse div{
 	padding-right: var(--pad-content);
+}
+.centre h2{
+	display: flex;
+	justify-content: center;
+}
+.centre > h1{
+	display: flex;
+	justify-content: center;
 }
 /* --------------------------------------Contact page */
 /* Contact page image alignment */
